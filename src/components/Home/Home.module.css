@@ -8,8 +8,21 @@
 .mainContainer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  margin-top: 10rem;
+}
+
+.rectangle {
+  all: unset;
+  width: 150%;
+  height: 120%;
+  position: absolute;
+  justify-content: flex-end;
+  top: -200px;
+  left: 100px;
+  z-index: 2;
 }
 
 .textLeft {
@@ -19,20 +32,28 @@
 }
 
 .textLeft p {
-  font-size: 1rem;
+  font-size: 0.7em;
+  font-family: "Montserrat", sans-serif;
 }
 
 .textLeft h1 {
   text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
 }
 
 .subTitle {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.3em !important;
+  font-weight: 300;
 }
 
 .textLeft button {
+  all: unset;
   margin-top: 1rem;
+  font-size: 0.6em;
+  margin: auto;
+  text-align: center;
+  max-width: 8rem;
   padding: 0.8em;
   border: none;
   border-radius: 0.4em;
@@ -42,8 +63,24 @@
     rgba(81, 111, 225, 1) 100%
   );
   color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.textLeft button:hover {
+  cursor: pointer;
 }
 
 .icons {
   margin-top: 1rem;
+}
+
+.icons span {
+  margin-right: 2rem;
+  color: #6d83f2;
+  font-size: 1.4rem;
+}
+
+.icons span:hover {
+  cursor: pointer;
+  color: #ffffff;
 }

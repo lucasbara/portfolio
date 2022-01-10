@@ -1,8 +1,9 @@
 .card {
-  background-color: green;
+  background-color: #191919;
   width: 25%;
   border-radius: 1em;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 2;
 }
 
 .text {
