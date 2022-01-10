@@ -1,0 +1,49 @@
+.homeContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #191919;
+  color: white;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.textLeft {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+}
+
+.textLeft p {
+  font-size: 1rem;
+}
+
+.textLeft h1 {
+  text-transform: uppercase;
+}
+
+.subTitle {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.textLeft button {
+  margin-top: 1rem;
+  padding: 0.8em;
+  border: none;
+  border-radius: 0.4em;
+  background: linear-gradient(
+    180deg,
+    rgba(105, 150, 239, 1) 0%,
+    rgba(81, 111, 225, 1) 100%
+  );
+  color: #ffffff;
+}
+
+.icons {
+  margin-top: 1rem;
+}
