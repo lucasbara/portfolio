@@ -1,12 +1,11 @@
 import React from "react";
 import style from "./About.module.css";
-import Navbar from "../Navbar/Navbar.jsx";
 import Profile from "../../assets/img/profile_pic.jpg";
+import Rectangle from "../../assets/img/home_rectangle.svg";
 
 const About = () => {
   return (
     <div className={style.aboutContainer}>
-      <Navbar />
       <div className={style.mainContainer}>
         <div className={style.boxContainer}>
           <h2>about me</h2>

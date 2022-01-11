@@ -9,9 +9,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  height: 70%;
   align-items: center;
   justify-content: space-around;
-  margin-top: 10rem;
 }
 
 .rectangle {
@@ -70,17 +70,21 @@
   cursor: pointer;
 }
 
+.textLeft button:hover {
+  background-color: grey;
+}
+
 .icons {
   margin-top: 1rem;
 }
 
-.icons span {
+.icons a {
   margin-right: 2rem;
   color: #6d83f2;
   font-size: 1.4rem;
 }
 
-.icons span:hover {
+.icons a:hover {
   cursor: pointer;
   color: #ffffff;
 }

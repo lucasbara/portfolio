@@ -1,28 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import style from "./Navbar.module.css";
 import Logo from "../../assets/img/lucasBaraWeb.png";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
   return (
     <div className={style.navContainer}>
-      <img src={Logo} alt="Logo" />
+      <img onClick={() => scroll.scrollToTop()} src={Logo} alt="Logo" />
       <nav>
         <ul>
           <li>
-            <Link to="/">home</Link>
+            <Link to="about" smooth={true} offset={-175}>
+              about me
+            </Link>
           </li>
           <li>
-            <Link to="/about">about me</Link>
+            <Link to="skills" smooth={true} offset={-175}>
+              skills
+            </Link>
           </li>
           <li>
-            <Link to="/">skills</Link>
+            <Link to="projects" smooth={true}>
+              projects
+            </Link>
           </li>
           <li>
-            <Link to="/">projects</Link>
-          </li>
-          <li>
-            <Link to="/">contact</Link>
+            <Link to="contact">contact</Link>
           </li>
         </ul>
       </nav>

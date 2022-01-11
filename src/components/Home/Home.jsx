@@ -17,15 +17,15 @@ const Home = () => {
           <p className={style.subTitle}>Full Stack Web Developer</p>
           <button>Download Resume</button>
           <div className={style.icons}>
-            <span>
+            <a href="www.google.com.ar" target="_blank">
               <BsGithub />
-            </span>
-            <span>
+            </a>
+            <a href="" target="_blank">
               <BsWhatsapp />
-            </span>
-            <span>
+            </a>
+            <a href="" target="_blank">
               <BsLinkedin />
-            </span>
+            </a>
           </div>
         </div>
         <Card />

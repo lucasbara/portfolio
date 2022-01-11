@@ -5,14 +5,18 @@
   flex-direction: row;
   justify-content: space-between;
   font-size: 1rem;
-  position: relative;
+  position: fixed;
   z-index: 1000;
 }
 
 img {
-  width: 200px;
-  height: 42px;
+  max-width: 200px;
+  max-height: 42px;
   margin: 1rem 1.5rem;
+}
+
+img:hover {
+  cursor: pointer;
 }
 
 ul {
@@ -31,4 +35,5 @@ ul li a {
 
 ul li a:hover {
   color: #6d83f2;
+  cursor: pointer;
 }
