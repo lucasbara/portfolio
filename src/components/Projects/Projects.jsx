@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Projects.module.css";
 import Card from "./Card.jsx";
-import projectInfo from "./Projects.js";
+import info from "./info.js";
 
 const Projects = () => {
   return (
@@ -9,17 +9,17 @@ const Projects = () => {
       <div className={style.boxContainer}>
         <h2>projects</h2>
         <div className={style.boxContent}>
-          {projectInfo.map((p) => {
-            <Card
-              title={p.title}
-              description={p.description}
-              image={p.image}
-              url={p.url}
-              github={p.github}
-            />;
+          {info.map((p) => {
+            return (
+              <Card
+                title={p.title}
+                description={p.description}
+                image={p.image}
+                url={p.url}
+                github={p.github}
+              />
+            );
           })}
-          <Card></Card>
-          <Card></Card>
         </div>
       </div>
     </div>

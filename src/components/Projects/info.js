@@ -1,6 +1,6 @@
 import pokemon from "../../assets/img/project_pokemon.png";
 
-const projects = [
+const info = [
   {
     title: "Pokémon API",
     description:
@@ -19,4 +19,4 @@ const projects = [
   },
 ];
 
-export default projects;
+export default info;

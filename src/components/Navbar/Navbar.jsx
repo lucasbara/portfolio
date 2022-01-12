@@ -21,7 +21,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="projects" smooth={true}>
+            <Link to="projects" smooth={true} offset={-80}>
               projects
             </Link>
           </li>

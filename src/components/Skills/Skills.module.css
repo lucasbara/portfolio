@@ -51,6 +51,12 @@
   color: #6d83f2;
 }
 
+.icons:hover {
+  cursor: pointer;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
 .icons p {
   font-size: 1rem !important;
   color: #ffffff !important;

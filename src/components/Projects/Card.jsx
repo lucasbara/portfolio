@@ -7,18 +7,23 @@ const Card = ({ title, description, image, url, github }) => {
   return (
     <div className={style.cardContainer}>
       <div className={style.cardText}>
-        <p>Pokémon API</p>
-        <p>
-          Pokémon API is a full stack web development, where you can find
-          existing pokemons and create new ones. You can also be able to filter
-          the pokemon by type, and order it.
-        </p>
+        <p>{title}</p>
+        <p>{description}</p>
         <div className={style.buttons}>
-          <button>Live Demo</button>
+          <button>
+            <a href={url} target="_blank">
+              Live Demo
+            </a>
+          </button>
           <button className={style.buttonRounded}>
-            <BsGithub />
+            <a href={github} target="_blank">
+              <BsGithub />
+            </a>
           </button>
         </div>
+      </div>
+      <div>
+        <img src={image}></img>
       </div>
     </div>
   );
