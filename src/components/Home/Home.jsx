@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./Home.module.css";
 import Card from "./Card.jsx";
+//import Dots from "../Dots/Dots.jsx";
 import Navbar from "../Navbar/Navbar.jsx";
 import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import Rectangle from "../../assets/img/home_rectangle.svg";
