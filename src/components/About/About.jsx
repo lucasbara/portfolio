@@ -12,14 +12,11 @@ const About = () => {
           <div className={style.boxContent}>
             <img src={Profile} alt="Lucas Bara" />
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
-              corporis facere eum hic aperiam animi sunt deleniti, tempora
-              recusandae nisi repudiandae, inventore beatae minus omnis quod
-              soluta reiciendis. <br></br>Maiores, debitis. Lorem ipsum dolor
-              sit amet consectetur, adipisicing elit. Nihil corporis facere eum
-              hic aperiam animi sunt deleniti, tempora recusandae nisi
-              repudiandae, inventore beatae minus omnis quod soluta reiciendis?
-              Maiores, debitis.
+              Hey! My name is Lucas Barallobre, i was borned in Buenos
+              Argentina. I'm a Full Stack Web Developer, who is interested in
+              expanding their front-end skills. <br></br>
+              I’m passionate about technology innovation, design, and having big
+              challenging tasks on my to-do list
             </p>
           </div>
         </div>

@@ -4,26 +4,12 @@ import style from "./Dots.module.css";
 const Dots = () => {
   return (
     <div className={style.table}>
-      <div className={style.cell}>
-        <ul className={style.dots}>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Products</a>
-          </li>
-          <li>
-            <a href="#">Portfolio</a>
-          </li>
-          <li>
-            <a href="#">Blog</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
+      <div className={style.dots}>
+        <ul>
+          <li className={style.dot}></li>
+          <li className={style.dot}></li>
+          <li className={style.dot}></li>
+          <li className={style.dot}></li>
         </ul>
       </div>
     </div>

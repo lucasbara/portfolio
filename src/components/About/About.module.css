@@ -60,9 +60,13 @@
   border: 12px solid #fff;
 }
 
+.boxContent img:hover {
+  cursor: auto;
+}
+
 .boxContent p {
-  width: 70%;
-  padding-left: 1em;
+  width: 60%;
+  padding-left: 2em;
   font-weight: 300;
 }
 

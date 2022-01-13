@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   width: 100vw;
-  height: 50vh;
+  height: 80vh;
   background-color: #191919;
   color: #ffffff;
   display: flex;
@@ -19,7 +19,7 @@
 
 .boxContent {
   width: 50%;
-  height: 80%;
+  height: 45%;
   background-color: #232323;
   display: flex;
   align-items: center;
@@ -29,36 +29,32 @@
   padding-bottom: 5em;
 }
 
-.inputs {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  font-family: "Karla", sans-serif;
-}
-
-.inputs label {
-  width: 120%;
-  margin-right: 1em;
-}
-
-.inputs p {
-  font-size: 1em !important;
-}
-
 form {
   all: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 80%;
   height: 100%;
-  font-family: "Karla", sans-serif;
+  font-family: "Karla", sans-serif !important;
 }
 
 form input {
   height: 2em;
   width: 100%;
+  font-family: "Karla", sans-serif;
+  font-size: 0.8em;
+}
+
+form label {
+  width: 100%;
 }
 
 form textarea {
+  display: flex;
+  font-family: "Karla", sans-serif;
+  font-size: 0.8em;
   width: 100%;
   height: 60%;
 }
@@ -82,10 +78,60 @@ form textarea {
 }
 
 form input::placeholder {
+  font-family: "Karla", sans-serif;
   font-size: 1.2em;
+}
+
+form textarea:active {
+  font-family: "Karla", sans-serif;
 }
 
 form textarea::placeholder {
   font-size: 1.2em;
   font-family: "Karla", sans-serif;
+}
+
+form label button {
+  all: unset;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: center;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 2em;
+  font-size: 0.8em;
+  width: 20%;
+  max-width: 10rem;
+  padding: 0.9em;
+  border: none;
+  border-radius: 0.4em;
+  background: linear-gradient(
+    180deg,
+    rgba(105, 150, 239, 1) 0%,
+    rgba(81, 111, 225, 1) 100%
+  );
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+form label button {
+  cursor: pointer;
+}
+
+.inputs {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: "Karla", sans-serif;
+}
+
+.inputs label {
+  width: 120%;
+  margin-right: 1em;
+}
+
+.inputs p {
+  font-size: 1em !important;
 }
