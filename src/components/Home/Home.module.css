@@ -1,7 +1,9 @@
 .homeContainer {
   width: 100vw;
   height: 100vh;
-  background-color: #191919;
+  /*background-color: #191919;*/
+  background-image: url("../../assets/img/home_svg1.svg");
+  background-position: 10%;
   color: white;
   display: flex;
 }
@@ -21,17 +23,6 @@
   height: 100%;
   align-items: center;
   justify-content: space-around;
-}
-
-.rectangle {
-  all: unset;
-  width: 150%;
-  height: 120%;
-  position: absolute;
-  justify-content: flex-end;
-  top: -200px;
-  left: 100px;
-  z-index: 2;
 }
 
 .textLeft {
@@ -77,10 +68,16 @@
 
 .textLeft button:hover {
   cursor: pointer;
-}
-
-.textLeft button:hover {
-  background-color: grey;
+  cursor: auto;
+  cursor: pointer;
+  color: #ffffff;
+  transition: 0.3s;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .icons {
@@ -95,6 +92,7 @@
 
 .icons a:hover {
   cursor: pointer;
+  transition: 0.3s;
   color: #ffffff;
 }
 
@@ -103,4 +101,21 @@
   padding: 0px;
   display: flex;
   flex-direction: row;
+}
+
+/* CSS ANIMATIONS */
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }

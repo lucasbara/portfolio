@@ -1,7 +1,8 @@
 .projectsContainer {
   width: 100vw;
   height: 100vh;
-  background-color: #191919;
+  background-image: url("../../assets/img/about_svg.svg");
+  background-position: 10%;
   color: white;
 }
 

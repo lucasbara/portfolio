@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import style from "./Contact.module.css";
 import { IoIosSend } from "react-icons/io";
 import emailjs, { init } from "@emailjs/browser";
+import Footer from "../Footer/Footer.jsx";
 
 const userID = "user_a2pABavZOp4EqZ1OjEjHw";
 
@@ -83,6 +84,7 @@ const Contact = () => {
           </label>
         </form>
       </div>
+      <Footer />
     </div>
   );
 };
