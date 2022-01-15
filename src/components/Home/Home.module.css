@@ -3,13 +3,15 @@
   height: 100vh;
   /*background-color: #191919;*/
   background-image: url("../../assets/img/home_svg1.svg");
-  background-size: cover;
+  background-position: 50% 100% !important;
+  background-size: cover !important;
   color: white;
   display: flex;
 }
 
 .bigContainer {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,19 +34,21 @@
 }
 
 .textLeft p {
-  font-size: 0.7em;
+  font-size: 0.8em;
+  font-weight: 300;
   font-family: "Montserrat", sans-serif;
 }
 
 .textLeft h1 {
   text-transform: uppercase;
+  letter-spacing: 0.05em;
   font-family: "Montserrat", sans-serif;
 }
 
 .subTitle {
   text-transform: uppercase;
+  letter-spacing: 0.1em;
   font-size: 1.3em !important;
-  font-weight: 300;
 }
 
 .textLeft button {
@@ -57,12 +61,8 @@
   padding: 0.8em;
   border: none;
   border-radius: 0.4em;
-  background: linear-gradient(
-    180deg,
-    rgba(105, 150, 239, 1) 0%,
-    rgba(81, 111, 225, 1) 100%
-  );
-  color: #ffffff;
+  background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+  font-weight: 500;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -70,8 +70,9 @@
   cursor: pointer;
   cursor: auto;
   cursor: pointer;
-  color: #ffffff;
-  transition: 0.3s;
+  transition: 1s;
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  color: #000000;
   -webkit-animation-name: pulse;
   animation-name: pulse;
   -webkit-animation-duration: 1s;
@@ -101,6 +102,79 @@
   padding: 0px;
   display: flex;
   flex-direction: row;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 576px) {
+  .homeContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: 0%;
+    background-size: cover;
+  }
+  .mainContainer {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .textLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .homeContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: 0%;
+    background-size: cover;
+  }
+  .mainContainer {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  .textLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    width: 100%;
+  }
+
+  .aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 993px) {
 }
 
 /* CSS ANIMATIONS */

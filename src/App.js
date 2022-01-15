@@ -9,7 +9,7 @@ import Skills from "./components/Skills/Skills.jsx";
 import style from "./App.module.css";
 
 function App() {
-  return (
+  return [
     <div className={style.App}>
       <React.Fragment>
         <div>
@@ -27,10 +27,9 @@ function App() {
         <section id="contact">
           <Contact />
         </section>
-        <Footer />
       </React.Fragment>
-    </div>
-  );
+    </div>,
+  ];
 }
 
 export default App;

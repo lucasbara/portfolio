@@ -41,3 +41,74 @@ ul li a:hover {
   color: #6d83f2;
   cursor: pointer;
 }
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 576px) {
+  .navContainer {
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  ul li a {
+    padding: 1.5rem;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .navContainer {
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  ul li a {
+    padding: 1.5rem;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 993px) {
+}

@@ -2,7 +2,8 @@
   width: 100vw;
   height: 100vh;
   background-image: url("../../assets/img/about_svg.svg");
-  background-size: cover;
+  /*background-position: 50% 100%; */
+  background-size: cover !important;
   color: white;
 }
 
@@ -19,7 +20,6 @@
   width: 50%;
   height: 50%;
   border-radius: 3rem;
-  /*background-color: #191919;*/
   background-color: #232323;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
@@ -67,6 +67,59 @@
   width: 60%;
   padding-left: 2em;
   font-weight: 300;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 576px) {
+  .aboutContainer {
+    margin-bottom: 5rem;
+  }
+  .boxContainer {
+    height: auto;
+    width: 90%;
+  }
+  .boxContainer h2 {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+  .boxContent {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .boxContent p {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .aboutContainer {
+    margin-bottom: 5rem;
+  }
+  .boxContainer {
+    height: auto;
+    width: 90%;
+  }
+  .boxContainer h2 {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+  .boxContent {
+    height: auto;
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .boxContent p {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 993px) {
 }
 
 /* CSS ANIMATIONS */

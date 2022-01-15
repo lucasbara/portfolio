@@ -30,6 +30,7 @@ const Contact = () => {
   }, [input, errors]);
 
   const handleSumbit = (e) => {
+    if (!input.name) return alert("You must complete the form ;)");
     e.preventDefault();
 
     emailjs
@@ -45,44 +46,55 @@ const Contact = () => {
   };
   return (
     <div className={style.contactContainer}>
-      <h2>get in touch</h2>
-      <div className={style.boxContent}>
-        <form ref={form} onSubmit={handleSumbit}>
-          <div className={style.inputs}>
+      <div className={style.mainContainer}>
+        <div className={style.boxContent}>
+          <h2>get in touch</h2>
+          <form ref={form} onSubmit={handleSumbit}>
+            <div className={style.inputs}>
+              <label>
+                <p>Name</p>
+                <input
+                  required
+                  placeholder="John Doe"
+                  name="name"
+                  type="text"
+                  onChange={handleInputChange}
+                  className={errors.name && style.errors}
+                ></input>
+              </label>
+              <label>
+                <p>Email</p>
+                <input
+                  required
+                  placeholder="example@gmail.com"
+                  name="email"
+                  type="email"
+                  onChange={handleInputChange}
+                  className={errors.email && style.errors}
+                ></input>
+              </label>
+            </div>
             <label>
-              <p>Name</p>
-              <input
-                required
-                placeholder="John Doe"
-                name="name"
-                type="text"
-                onChange={handleInputChange}
-              ></input>
-            </label>
-            <label>
-              <p>Email</p>
-              <input
-                required
+              <p>Message</p>
+              <textarea
                 placeholder="example@gmail.com"
-                name="email"
-                type="email"
+                name="message"
                 onChange={handleInputChange}
-              ></input>
+                className={errors.message && style.errors}
+              ></textarea>
+              {Object.keys(errors).length !== 0 ? (
+                <button disabled className={style.btnError}>
+                  Complete the form
+                </button>
+              ) : (
+                <button>
+                  <IoIosSend />
+                  Submit
+                </button>
+              )}
             </label>
-          </div>
-          <label>
-            <p>Message</p>
-            <textarea
-              placeholder="example@gmail.com"
-              name="message"
-              onChange={handleInputChange}
-            ></textarea>
-            <button>
-              <IoIosSend />
-              Submit
-            </button>
-          </label>
-        </form>
+          </form>
+        </div>
       </div>
       <Footer />
     </div>
@@ -91,21 +103,18 @@ const Contact = () => {
 
 export default Contact;
 
-export const validateForm = (input) => {
+export function validateForm(input) {
   let errors = {};
   if (!input.name) {
     errors.name = "Name is required";
-  } else if (!/^[A-Za-z]+$/.test(input.name)) {
-    errors.name = "Name must be plain text";
   }
   if (!input.email) {
     errors.email = "Email is required";
-  } else if (!/^(. +)@(\S+)$/.test(input.email)) {
+  } else if (!/^[^@\s]+@[^@\s\.]+\.[^@\.\s]+$/.test(input.email)) {
     errors.email = "Please write a valid email";
   }
   if (!input.message) {
     errors.message = "Message is required";
-  } else if (input.message.length > 10) {
-    errors.message = "Message must be at least ten words";
   }
-};
+  return errors;
+}

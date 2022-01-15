@@ -16,13 +16,16 @@ const Home = () => {
           <p className={style.subTitle}>Full Stack Web Developer</p>
           <button>Download Resume</button>
           <div className={style.icons}>
-            <a href="www.google.com.ar" target="_blank">
+            <a href="https://github.com/lucasbara" target="_blank">
               <BsGithub />
             </a>
-            <a href="" target="_blank">
+            <a href="https://wa.me/541141632401" target="_blank">
               <BsWhatsapp />
             </a>
-            <a href="" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/lucas-barallobre/"
+              target="_blank"
+            >
               <BsLinkedin />
             </a>
           </div>

@@ -2,7 +2,8 @@
   width: 100vw;
   height: 100vh;
   background-image: url("../../assets/img/home_svg1.svg");
-  background-size: cover;
+  background-position: 50% 100% !important;
+  background-size: cover !important;
   color: white;
 }
 
@@ -18,13 +19,13 @@
 .boxContainer {
   all: unset;
   width: 50%;
-  height: 50%;
+  height: 70%;
   border-radius: 3rem;
-  padding: 3rem;
+  /* #191919 */
   background-color: #232323;
   border-radius: 3rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  /*background-color: #191919;*/
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +36,7 @@
 .boxContainer h2 {
   font-size: 3rem;
   font-family: "Montserrat", sans-serif;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .boxContent {
@@ -51,12 +52,13 @@
 
 .icons {
   padding: 1rem 3rem;
+  font-size: 1em;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  color: #6d83f2;
+  color: #715df2;
 }
 
 .icons:hover {
@@ -78,6 +80,52 @@
 
 .icons p:hover {
   color: #6d83f2;
+}
+
+/* RESPOSIVE */
+
+@media screen and (max-width: 576px) {
+  .skillsContainer {
+    margin-bottom: 5rem;
+  }
+  .boxContainer {
+    height: 100%;
+    width: 90%;
+  }
+  .boxContainer h2 {
+    font-size: 2.5rem;
+    padding-bottom: 0;
+  }
+  .boxContent {
+    height: 100%;
+    width: 100%;
+  }
+  .icons {
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .boxContainer {
+    width: 90%;
+    height: auto;
+  }
+  .boxContainer h2 {
+    font-size: 2.5rem;
+    padding-bottom: 0;
+  }
+  .boxContent {
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    height: auto;
+    width: 100%;
+  }
+  .icons {
+    font-size: 0.5em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 993px) {
 }
 
 /* CSS ANIMATIONS */

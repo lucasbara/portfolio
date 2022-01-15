@@ -22,7 +22,7 @@ const Card = ({ title, description, image, url, github }) => {
           </button>
         </div>
       </div>
-      <div>
+      <div className={style.cardImage}>
         <img src={image}></img>
       </div>
     </div>
