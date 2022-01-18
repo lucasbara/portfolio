@@ -1,10 +1,13 @@
 .skillsContainer {
   width: 100vw;
-  height: 100vh;
-  background-image: url("../../assets/img/home_svg1.svg");
-  background-position: 50% 100% !important;
+  min-height: 100vh;
+  /*background-image: url("../../assets/img/home_svg1.svg");
+  background-position: 50% 100% !important;*/
   background-size: cover !important;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mainContainer {
@@ -19,7 +22,7 @@
 .boxContainer {
   all: unset;
   width: 50%;
-  height: 70%;
+  height: auto;
   border-radius: 3rem;
   /* #191919 */
   background-color: #232323;
@@ -43,11 +46,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: auto;
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
   font-size: 7rem;
+  margin-bottom: 2.5rem;
 }
 
 .icons {
@@ -107,15 +111,16 @@
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .boxContainer {
-    width: 90%;
+    width: 80%;
     height: auto;
   }
   .boxContainer h2 {
     font-size: 2.5rem;
+    padding-top: 1em;
     padding-bottom: 0;
   }
   .boxContent {
-    padding-bottom: 1em;
+    padding-bottom: 0.25em;
     padding-top: 0.5em;
     height: auto;
     width: 100%;
@@ -126,6 +131,24 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 993px) {
+  .boxContainer {
+    width: 80%;
+    height: auto;
+  }
+  .boxContainer h2 {
+    font-size: 2.5rem;
+    padding-top: 1em;
+    padding-bottom: 0;
+  }
+  .boxContent {
+    padding-bottom: 0.25em;
+    padding-top: 0.5em;
+    height: auto;
+    width: 100%;
+  }
+  .icons {
+    font-size: 0.5em;
+  }
 }
 
 /* CSS ANIMATIONS */

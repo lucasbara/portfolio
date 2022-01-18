@@ -1,3 +1,28 @@
 /* ------------------ */
 
-/* ABOUT */
+.app {
+  background-image: url("./assets/img/bg.svg");
+  background-position-y: 3%;
+  background-size: cover;
+}
+
+@media screen and (max-width: 576px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 993px) {
+}

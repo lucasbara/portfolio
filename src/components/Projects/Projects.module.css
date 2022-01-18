@@ -1,8 +1,8 @@
 .projectsContainer {
   width: 100vw;
-  height: 100vh;
-  background-image: url("../../assets/img/about_svg.svg");
-  background-size: cover;
+  min-height: 100vh;
+  /*background-image: url("../../assets/img/about_svg.svg");
+  background-size: cover;*/
   color: white;
 }
 .mainContainer {
@@ -38,7 +38,7 @@
   justify-content: center;
   align-items: center;
   width: 50%;
-  height: 100%;
+  height: auto;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -54,8 +54,8 @@
     padding-bottom: 2rem;
   }
   .boxContent {
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: 90%;
     flex-direction: column;
   }
 
@@ -66,15 +66,15 @@
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .cardContainer {
-    width: 90%;
+    width: 100%;
   }
   .boxContainer h2 {
     font-size: 2.5rem;
     padding-bottom: 2rem;
   }
   .boxContent {
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: 90%;
     flex-direction: column;
   }
 
@@ -84,4 +84,21 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 993px) {
+  .cardContainer {
+    width: 90%;
+  }
+
+  .boxContainer h2 {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+  .boxContent {
+    height: auto;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .boxContent p {
+    padding-top: 1rem;
+  }
 }

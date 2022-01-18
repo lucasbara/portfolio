@@ -2,9 +2,8 @@
   width: 100vw;
   height: 100vh;
   /*background-color: #191919;*/
-  background-image: url("../../assets/img/home_svg1.svg");
-  background-position: 50% 100% !important;
-  background-size: cover !important;
+  /*background-image: url("../../assets/img/home_svg1.svg");*/
+  /*background-position: 50% 100% !important;*/
   color: white;
   display: flex;
 }
@@ -153,7 +152,7 @@
   .mainContainer {
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: auto;
     height: auto;
   }
   .textLeft {
@@ -163,18 +162,44 @@
     align-items: center;
     margin-top: 4em;
     margin-bottom: 4em;
-    width: 100%;
   }
 
   .aside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 993px) {
+  .homeContainer {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-position: 0%;
+    background-size: cover;
+  }
+  .mainContainer {
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: auto;
+  }
+  .textLeft {
+    display: flex;
+    width: 100%;
+    font-size: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    margin-bottom: 4em;
+  }
+
+  .textLeft bu {
+  }
+
+  .aside {
+    width: 85%;
+  }
 }
 
 /* CSS ANIMATIONS */

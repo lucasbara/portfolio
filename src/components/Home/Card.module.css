@@ -31,5 +31,10 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 993px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .card {
+    background-color: #232323;
+    width: 100%;
+    margin-top: 2em;
+  }
 }

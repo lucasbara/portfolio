@@ -1,9 +1,8 @@
 .aboutContainer {
   width: 100vw;
   height: 100vh;
-  background-image: url("../../assets/img/about_svg.svg");
+  /*background-image: url("../../assets/img/about_svg.svg");*/
   /*background-position: 50% 100%; */
-  background-size: cover !important;
   color: white;
 }
 
@@ -18,7 +17,7 @@
 .boxContainer {
   all: unset;
   width: 50%;
-  height: 50%;
+  height: auto;
   border-radius: 3rem;
   background-color: #232323;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -37,6 +36,7 @@
 
 .boxContent {
   display: flex;
+  height: auto;
   align-items: center;
   padding: 1em;
   margin-bottom: 2em;
@@ -100,9 +100,10 @@
   }
   .boxContainer {
     height: auto;
-    width: 90%;
+    width: 80%;
   }
   .boxContainer h2 {
+    padding-top: 0.5em;
     font-size: 2.5rem;
     padding-bottom: 2rem;
   }
@@ -119,7 +120,30 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 993px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .aboutContainer {
+    margin-bottom: 5rem;
+  }
+  .boxContainer {
+    height: auto;
+    width: 80%;
+  }
+  .boxContainer h2 {
+    padding-top: 0.5em;
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+  .boxContent {
+    height: auto;
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .boxContent p {
+    padding-top: 1rem;
+  }
 }
 
 /* CSS ANIMATIONS */
