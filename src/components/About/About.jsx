@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./About.module.css";
 import Profile from "../../assets/img/profile_pic.jpg";
-import Rectangle from "../../assets/img/home_rectangle.svg";
+import ScrollToTop from "./ScrollToTop";
 
 const About = () => {
   return (
@@ -12,14 +12,17 @@ const About = () => {
           <div className={style.boxContent}>
             <img src={Profile} alt="Lucas Bara" />
             <p>
-              Hey! My name is Lucas Barallobre, i was borned in Buenos
+              Hey! My name is Lucas Barallobre, i was born in Buenos Aires,
               Argentina. I'm a Full Stack Web Developer, who is interested in
               expanding their front-end skills. <br></br>
               I’m passionate about technology innovation, design, and having big
-              challenging tasks on my to-do list
+              challenging tasks on my to-do list.
             </p>
           </div>
         </div>
+      </div>
+      <div className={style.scrollBtn}>
+        <ScrollToTop />
       </div>
     </div>
   );

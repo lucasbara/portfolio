@@ -65,8 +65,8 @@ form textarea {
   display: flex;
   font-family: "Karla", sans-serif;
   font-size: 0.8em;
-  width: 100%;
-  height: 60%;
+  width: 98%;
+  height: 10rem;
 }
 
 ::-webkit-input-placeholder {
@@ -110,7 +110,7 @@ form label button {
   flex-direction: row;
   cursor: pointer;
   margin: auto;
-  margin-top: 2em;
+  margin-top: 4rem;
   font-size: 0.8em;
   width: 20%;
   max-height: 2rem;
@@ -248,7 +248,7 @@ form label button:hover {
 
 @media screen and (min-width: 768px) and (max-width: 993px) {
   .mainContainer {
-    height: auto;
+    height: 50%;
     width: 80%;
     margin-bottom: 8em;
   }

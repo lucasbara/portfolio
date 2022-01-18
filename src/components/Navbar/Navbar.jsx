@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import style from "./Navbar.module.css";
-import Logo from "../../assets/img/lucasBaraWeb.png";
+import Logo from "../../assets/img/logo.svg";
 import { Link } from "react-scroll";
 import { animateScroll as scroll } from "react-scroll";
 

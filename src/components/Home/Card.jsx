@@ -2,11 +2,12 @@ import React from "react";
 import style from "./Card.module.css";
 
 const Card = () => {
+  const key = "{";
   return (
     <div className={style.card}>
       <div className={style.text}>
         <p>
-          1&nbsp;&nbsp;class <b>Person</b> "["
+          1&nbsp;&nbsp;class <b>Person</b> "{`${key}`}"
         </p>
         <p>2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; constructor() </p>
         <p>

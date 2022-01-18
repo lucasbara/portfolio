@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./Home.module.css";
 import Card from "./Card.jsx";
-import Dots from "../Dots/Dots.jsx";
 import Navbar from "../Navbar/Navbar.jsx";
 import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
+import Resume from "../../assets/resume.pdf";
 
 const Home = () => {
   return (
@@ -14,7 +14,11 @@ const Home = () => {
           <p>Hello, I'm</p>
           <h1>Lucas Barallobre</h1>
           <p className={style.subTitle}>Full Stack Web Developer</p>
-          <button>Download Resume</button>
+          <button>
+            <a href={Resume} target="_blank">
+              Download Resume
+            </a>
+          </button>
           <div className={style.icons}>
             <a href="https://github.com/lucasbara" target="_blank">
               <BsGithub />

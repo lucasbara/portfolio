@@ -10,9 +10,9 @@
 }
 
 img {
-  max-width: 200px;
-  max-height: 42px;
-  margin: 1rem 1.5rem;
+  max-width: 300px;
+  max-height: 60px;
+  margin: 0rem 1.5rem;
 }
 
 img:hover {
@@ -54,6 +54,10 @@ ul li a:hover {
     margin-bottom: 2em;
   }
 
+  .navContainer img {
+    margin-left: 3em;
+  }
+
   nav {
     width: 100%;
     display: flex;
@@ -61,6 +65,7 @@ ul li a:hover {
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
+    margin-right: 2.8em;
   }
 
   ul {
@@ -118,6 +123,10 @@ ul li a:hover {
     justify-content: center;
     align-items: center;
     margin-bottom: 2em;
+  }
+
+  .navContainer img {
+    margin-left: 1em;
   }
 
   nav {

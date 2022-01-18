@@ -7,7 +7,7 @@ const Card = ({ title, description, image, url, github }) => {
   return (
     <div className={style.cardContainer}>
       <div className={style.cardText}>
-        <p>{title}</p>
+        <h4>{title}</h4>
         <p>{description}</p>
         <div className={style.buttons}>
           <button>

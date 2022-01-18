@@ -71,13 +71,14 @@ const Contact = () => {
                   type="email"
                   onChange={handleInputChange}
                   className={errors.email && style.errors}
+                  id={style.input}
                 ></input>
               </label>
             </div>
             <label>
               <p>Message</p>
               <textarea
-                placeholder="example@gmail.com"
+                placeholder="Write your message..."
                 name="message"
                 onChange={handleInputChange}
                 className={errors.message && style.errors}

@@ -7,7 +7,7 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-bottom: 2rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
@@ -28,11 +28,23 @@
 .cardImage img {
   all: unset;
   height: auto;
-  width: 90%;
+  width: 80%;
   max-width: 30rem;
   margin-left: 1.2rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   object-fit: cover;
+  border-radius: 1rem;
+  border: 0.4rem solid #ffff;
+}
+
+.cardImage img:hover {
+  transition: 0.3s;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .buttons a {
@@ -132,7 +144,7 @@
 
   .cardImage img {
     width: 70%;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   .buttons {
@@ -171,20 +183,6 @@
 
 /* CSS ANIMATIONS */
 
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
 @keyframes pulse {
   0% {
     -webkit-transform: scale3d(1, 1, 1);

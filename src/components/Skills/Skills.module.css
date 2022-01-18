@@ -1,8 +1,6 @@
 .skillsContainer {
   width: 100vw;
   min-height: 100vh;
-  /*background-image: url("../../assets/img/home_svg1.svg");
-  background-position: 50% 100% !important;*/
   background-size: cover !important;
   color: white;
   display: flex;

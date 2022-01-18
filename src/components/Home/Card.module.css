@@ -18,7 +18,7 @@
 @media screen and (max-width: 576px) {
   .card {
     background-color: #232323;
-    width: 100%;
+    width: auto;
     margin-top: 2em;
   }
 }
