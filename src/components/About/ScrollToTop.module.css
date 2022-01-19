@@ -17,6 +17,16 @@
   display: none;
 }
 
+/* RESPONSIVE */
+
+@media screen and (max-width: 576px) {
+  .button {
+    font-size: 2rem;
+  }
+}
+
+/* CSS ANIMATIONS */
+
 @keyframes pulse {
   0% {
     -webkit-transform: scale3d(1, 1, 1);

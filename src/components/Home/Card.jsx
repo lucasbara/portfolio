@@ -12,7 +12,7 @@ const Card = () => {
         <p>2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; constructor() </p>
         <p>
           3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.name = "{" "}
-          <b>Lucas Barallobre</b>
+          <b>Lucas Barallobre</b>;
         </p>
         <p>
           4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.traits = ["

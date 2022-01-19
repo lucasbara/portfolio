@@ -13,9 +13,9 @@ const info = [
   {
     title: "Medical Hub",
     description:
-      "Medical HUB is an aplication, where you can request and manage medical appointments",
+      "Medical HUB is an aplication, where you can request and manage your medical appointments.",
     image: medicalHub,
-    url: "www.google.com.ar",
+    url: "#",
     github: "https://github.com/lucasbara/medical-hub-pf",
   },
 ];

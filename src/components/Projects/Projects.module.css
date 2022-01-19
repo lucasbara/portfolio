@@ -56,6 +56,7 @@
     height: auto;
     width: 90%;
     flex-direction: column;
+    z-index: 1;
   }
 
   .boxContent p {

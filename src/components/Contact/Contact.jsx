@@ -24,11 +24,6 @@ const Contact = () => {
     );
   };
 
-  useEffect(() => {
-    console.log(input);
-    console.log("Errors", errors);
-  }, [input, errors]);
-
   const handleSumbit = (e) => {
     if (!input.name) return alert("You must complete the form ;)");
     e.preventDefault();

@@ -5,6 +5,7 @@ import { BiCodeAlt } from "react-icons/bi";
 import { DiReact } from "react-icons/di";
 
 const Footer = () => {
+  console.log("Hey curious, what are you doing here? :)");
   return (
     <div className={style.footerContainer}>
       <p>

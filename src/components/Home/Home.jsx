@@ -3,7 +3,7 @@ import style from "./Home.module.css";
 import Card from "./Card.jsx";
 import Navbar from "../Navbar/Navbar.jsx";
 import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
-import Resume from "../../assets/resume.pdf";
+import Resume from "../../assets/resume-eng.pdf";
 
 const Home = () => {
   return (

@@ -10,7 +10,7 @@ const Projects = () => {
         <div className={style.boxContainer}>
           <h2>projects</h2>
           <div className={style.boxContent}>
-            {info.map((p) => {
+            {info.map((p, i) => {
               return (
                 <Card
                   title={p.title}
@@ -18,6 +18,7 @@ const Projects = () => {
                   image={p.image}
                   url={p.url}
                   github={p.github}
+                  key={i}
                 />
               );
             })}

@@ -15,8 +15,8 @@ const About = () => {
               Hey! My name is Lucas Barallobre, i was born in Buenos Aires,
               Argentina. I'm a Full Stack Web Developer, who is interested in
               expanding their front-end skills. <br></br>
-              I’m passionate about technology innovation, design, and having big
-              challenging tasks on my to-do list.
+              I’m passionate about programming, design and technology
+              innovation.
             </p>
           </div>
         </div>
