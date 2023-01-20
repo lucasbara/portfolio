@@ -7,8 +7,8 @@ const info = [
     description:
       "Pokémon API is a full stack web development, where you can find existing pokemons and create new ones. You can also be able to filter the pokemon by type, and order it.",
     image: pokemon,
-    url: "https://the-poke-api.netlify.app/",
-    github: "https://github.com/lucasbara/pipokemon",
+    url: "https://pokemon-xi-six.vercel.app/",
+    github: "https://github.com/lucasbara/pokemonapp",
   },
   {
     title: "Medical Hub",

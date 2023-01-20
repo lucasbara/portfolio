@@ -10,13 +10,14 @@ const About = () => {
         <div className={style.boxContainer}>
           <h2>about me</h2>
           <div className={style.boxContent}>
-            <img src={Profile} alt="Lucas Bara" />
             <p>
-              Hey! My name is Lucas Barallobre, i was born in Buenos Aires,
-              Argentina. I'm a Full Stack Web Developer, who is interested in
-              expanding their front-end skills. <br></br>
-              I’m passionate about programming, design and technology
-              innovation.
+              Hey! My name is Lucas Barallobre.<br></br> As a front-end
+              developer, I have a keen eye for design and a and a deep
+              understanding of how to create user interfaces that are both
+              functional and aesthetically pleasing.<br></br> Performance and
+              scalability are always top of mind for me. I have a strong
+              foundation using a variety of tools to build high-quality
+              applications.
             </p>
           </div>
         </div>

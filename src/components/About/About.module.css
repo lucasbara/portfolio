@@ -37,17 +37,10 @@
 .boxContent {
   display: flex;
   height: auto;
+  justify-content: center;
   align-items: center;
   padding: 1em;
   margin-bottom: 2em;
-}
-
-.boxContent img {
-  width: 30%;
-  all: unset;
-  max-width: 12em;
-  border-radius: 12em;
-  border: 12px solid #fff;
 }
 
 .boxContent img:hover {
